@@ -1,0 +1,60 @@
+.row-post{
+    color: #fff;
+    margin: 10px;
+}
+
+.posters{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.poster img{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.poster-details{
+    display: none;
+}
+
+.poster:hover .poster-details{
+    background-color: #00000091;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.poster-details p{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.poster-overview{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
